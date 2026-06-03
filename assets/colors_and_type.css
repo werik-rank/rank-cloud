@@ -1,0 +1,294 @@
+/* =============================================================
+   RankMyApp Design System — colors_and_type.css
+   Canonical tokens. Import this first. All other styles consume
+   these variables; do not hardcode hex or font-family elsewhere.
+   ============================================================= */
+
+/* ---------- Typography ----------
+   Helvetica is the display face (commercial, not on Google Fonts).
+   Roboto is the body face (loaded from /fonts/ — see fonts.css).
+   The display stack falls back to the system Helvetica; if that
+   is unavailable, Inter is the open substitute.
+*/
+
+@import url("./fonts/fonts.css");
+
+:root {
+  /* === Font families ============================================ */
+  --font-display: "Helvetica Neue", "Helvetica", "Inter", Arial, sans-serif;
+  --font-body: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* === Type scale (semantic) ==================================== */
+  /* Display / H1 */
+  --type-display-size: 72px;
+  --type-display-size-mobile: 40px;
+  --type-display-weight: 700;
+  --type-display-tracking: -0.03em;
+  --type-display-leading: 1.02;
+
+  /* H2 */
+  --type-h2-size: 44px;
+  --type-h2-size-mobile: 32px;
+  --type-h2-weight: 700;
+  --type-h2-tracking: -0.025em;
+  --type-h2-leading: 1.1;
+
+  /* H3 */
+  --type-h3-size: 24px;
+  --type-h3-weight: 500;
+  --type-h3-tracking: -0.015em;
+  --type-h3-leading: 1.25;
+
+  /* Body Large */
+  --type-body-lg-size: 18px;
+  --type-body-lg-leading: 1.6;
+  --type-body-lg-weight: 400;
+
+  /* Body */
+  --type-body-size: 16px;
+  --type-body-leading: 1.55;
+  --type-body-weight: 400;
+
+  /* Small / Label */
+  --type-label-size: 13px;
+  --type-label-weight: 500;
+  --type-label-leading: 1.4;
+
+  /* Eyebrow / Badge */
+  --type-eyebrow-size: 11px;
+  --type-eyebrow-weight: 700;
+  --type-eyebrow-tracking: 0.14em;
+  --type-eyebrow-transform: uppercase;
+
+  /* === Brand colors — primary palette =========================== */
+  /* Primary action */
+  --color-primary: #0050e5;          /* Azul Quaternário — buttons, links, focus */
+  --color-primary-hover: #00132c;    /* Hover state — ink-blue darken */
+  --color-primary-soft: #e6efff;     /* Subtle backgrounds, badges */
+
+  /* Urgency */
+  --color-urgency: #ff5700;          /* Laranja — high-priority CTAs only */
+  --color-urgency-hover: #d94800;
+  --color-urgency-soft: #ffe9dd;
+
+  /* Dark / surface */
+  --color-ink: #00132c;              /* Marinho — dark backgrounds, primary text on light */
+  --color-ink-2: #1b2b33;            /* Slightly lifted dark surface */
+  --color-ink-deep: #00081a;         /* Deepest dark for gradient endpoints */
+
+  /* Neutrals */
+  --color-paper: #ffffff;
+  --color-bg: #f8f9fb;               /* Mid-tone section background */
+  --color-bg-2: #f1f5f9;             /* Chip background */
+  --color-border: #e8ecf0;           /* Default card border */
+  --color-divider: #f0f2f5;          /* Soft dividers */
+  --color-muted: #64748b;            /* Secondary text */
+  --color-muted-2: #475569;          /* Chip text */
+  --color-text: #00132c;             /* Body text on light */
+  --color-text-soft: #1f2937;        /* Heading text on light */
+
+  /* On-dark text */
+  --color-on-dark: #ffffff;
+  --color-on-dark-soft: #cbd5e1;
+
+  /* === Brand colors — semantic aliases ========================== */
+  --fg1: var(--color-text);          /* Primary text */
+  --fg2: var(--color-muted-2);       /* Secondary text */
+  --fg3: var(--color-muted);         /* Tertiary text / captions */
+  --bg1: var(--color-paper);         /* Primary surface */
+  --bg2: var(--color-bg);            /* Secondary surface */
+  --bg3: var(--color-bg-2);          /* Tertiary surface (chips) */
+  --line: var(--color-border);
+
+  /* === Product accents ========================================== */
+  --product-rmapp: #0050e5;          /* RankMyApp — same as primary */
+  --product-rmads: #d7f300;          /* RankMyAds — lime, DARK BG ONLY */
+  --product-rmads-ink: #00132c;      /* Required ink color when using lime */
+  --product-rmweb: #004795;          /* RankMyWeb — darker marine blue */
+  --product-rmgeo: #06b6d4;          /* RankMyGeo — cyan */
+  --product-datarank: #7c3aed;       /* DataRank — violet */
+  --product-influencers: #ff5700;    /* Digital Influencers — laranja (same as urgency) */
+
+  /* === Semantic colors ========================================== */
+  --color-success: #16a34a;
+  --color-success-soft: #dcfce7;
+  --color-warning: #f59e0b;
+  --color-warning-soft: #fef3c7;
+  --color-warning-ink: #92400e;
+  --color-warning-border: #fcd34d;
+  --color-danger: #dc2626;
+  --color-danger-soft: #fee2e2;
+  --color-info: #0050e5;             /* Brand-primary acts as info */
+  --color-info-soft: #e6efff;
+
+  /* === Spacing scale (8px base) ================================= */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 48px;
+  --space-9: 60px;
+  --space-10: 80px;
+  --space-11: 100px;
+  --space-12: 120px;
+
+  /* Section padding (desktop / mobile) */
+  --section-pad: 100px 0;
+  --section-pad-mobile: 60px 0;
+
+  /* Card spacing */
+  --card-gap: 24px;
+  --card-gap-mobile: 16px;
+  --card-pad: 32px;
+  --card-pad-mobile: 24px;
+
+  /* Container */
+  --container-max: 1200px;
+  --container-pad: 32px;
+  --container-pad-mobile: 20px;
+
+  /* === Radii ==================================================== */
+  --radius-pill: 100px;              /* Chips and tag-style elements */
+  --radius-button: 8px;              /* Buttons — squared, uppercase */
+  --radius-card: 16px;               /* Cards, hero blocks */
+  --radius-image: 8px;               /* Image placeholders */
+  --radius-badge: 6px;               /* Product / category badges */
+  --radius-input: 10px;              /* Form inputs */
+
+  /* === Borders ================================================== */
+  --border-card: 1px solid var(--color-border);
+  --border-secondary-btn: 1.5px solid var(--color-primary);
+  --border-ghost-btn: 1.5px solid var(--color-on-dark);
+  --border-product-top: 4px;         /* The colored product top-border */
+
+  /* === Shadows (only 2 elevations) ============================== */
+  --shadow-none: none;
+  --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.10);
+  --shadow-modal: 0 24px 64px rgba(0, 19, 44, 0.24);
+
+  /* === Motion =================================================== */
+  --transition-fast: all 0.15s ease;
+  --transition-card: all 0.25s ease;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* === Z-index ================================================== */
+  --z-nav: 100;
+  --z-modal: 1000;
+  --z-toast: 1100;
+
+  /* === Focus ring =============================================== */
+  --focus-ring: 2px solid var(--color-primary);
+  --focus-offset: 2px;
+}
+
+/* ---------- Semantic typography classes / element defaults ---------- */
+
+html { color: var(--fg1); }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
+  color: var(--fg1);
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1, .ds-display {
+  font-family: var(--font-display);
+  font-weight: var(--type-display-weight);
+  font-size: var(--type-display-size);
+  line-height: var(--type-display-leading);
+  letter-spacing: var(--type-display-tracking);
+  color: var(--fg1);
+  margin: 0 0 24px;
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: var(--type-h2-weight);
+  font-size: var(--type-h2-size);
+  line-height: var(--type-h2-leading);
+  letter-spacing: var(--type-h2-tracking);
+  color: var(--fg1);
+  margin: 0 0 16px;
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: var(--type-h3-weight);
+  font-size: var(--type-h3-size);
+  line-height: var(--type-h3-leading);
+  letter-spacing: var(--type-h3-tracking);
+  color: var(--fg1);
+  margin: 0 0 12px;
+}
+
+p, .body {
+  font-family: var(--font-body);
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
+  color: var(--fg2);
+  margin: 0 0 12px;
+}
+
+.body-lg, p.lead {
+  font-size: var(--type-body-lg-size);
+  line-height: var(--type-body-lg-leading);
+  font-weight: var(--type-body-lg-weight);
+  color: var(--fg2);
+}
+
+.label {
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-leading);
+  color: var(--fg2);
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--type-eyebrow-size);
+  font-weight: var(--type-eyebrow-weight);
+  text-transform: var(--type-eyebrow-transform);
+  letter-spacing: var(--type-eyebrow-tracking);
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* The pivot-word treatment for headlines */
+h1 em, h2 em, .h1 em, .h2 em {
+  font-style: normal;
+  color: var(--color-primary);
+  font-weight: inherit;
+}
+
+/* Mobile clamps */
+@media (max-width: 720px) {
+  h1, .h1 { font-size: var(--type-display-size-mobile); }
+  h2, .h2 { font-size: var(--type-h2-size-mobile); }
+}
+
+/* Focus ring — global default */
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+/* ---------- Utility container ---------- */
+.ds-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+@media (max-width: 720px) {
+  .ds-container { padding: 0 var(--container-pad-mobile); }
+}

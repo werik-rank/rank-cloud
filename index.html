@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rank Cloud — Grupo Rank</title>
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="stylesheet" href="assets/mockups.css" />
+<!-- icons: lucide -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=block" />
+</head>
+<body>
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#00132C"/>
+    <path d="M50 28 L66 58 H56 V72 H44 V58 H34 Z" fill="#0050E5"/>
+    <circle cx="42" cy="80" r="3" fill="#D7F300"/>
+    <circle cx="58" cy="80" r="3" fill="#D7F300"/>
+  </svg>
+</template>
+
+<!-- ============================ HEADER ============================ -->
+<header class="rc-header">
+  <a class="rc-logo" href="#" aria-label="Rank — início">
+    <span class="rc-wordmark">Rank</span>
+  </a>
+
+  <nav class="rc-nav">
+    <div class="rc-nav-item">
+      <span class="rc-nav-link">Produtos <i class="lucide-ic rc-caret" data-lucide="chevron-down"></i></span>
+      <div class="rc-dropdown rc-dropdown--mega">
+        <div class="rc-dd-col">
+          <div class="rc-dd-cat">Para apps</div>
+          <a class="rc-dd-item" href="#produtos">
+            <span class="rc-dd-dot" style="background:#0050E5;color:#fff">RmA</span>
+            <span class="rc-dd-name">RankMyApp</span>
+            <span class="rc-dd-mods">Mais downloads orgânicos e melhor reputação na loja, sem depender só de mídia.</span>
+          </a>
+        </div>
+
+        <div class="rc-dd-col">
+          <div class="rc-dd-cat">Para anúncios</div>
+          <a class="rc-dd-item" href="#produtos">
+            <span class="rc-dd-dot" style="background:#D7F300">RmA</span>
+            <span class="rc-dd-name">RankMyAds</span>
+            <span class="rc-dd-mods">Mídia paga eficiente e ROAS escalável em todos os canais, do programmatic ao Apple Ads.</span>
+          </a>
+          <a class="rc-dd-item" href="#produtos">
+            <span class="rc-dd-dot" style="background:#7C3AED;color:#fff">Adi</span>
+            <span class="rc-dd-name"><span class="rc-dd-new">novo</span>Ads Intelligence</span>
+            <span class="rc-dd-mods">Decisões de mídia guiadas pela inteligência de criativos e investimento da concorrência.</span>
+          </a>
+        </div>
+
+        <div class="rc-dd-col">
+          <div class="rc-dd-cat">Para sites</div>
+          <a class="rc-dd-item" href="#produtos">
+            <span class="rc-dd-dot" style="background:#06B6D4">RmG</span>
+            <span class="rc-dd-name"><span class="rc-dd-new">novo</span>RankMyGEO</span>
+            <span class="rc-dd-mods">Sua marca presente e citada nas respostas de ChatGPT, Claude, Perplexity e Gemini.</span>
+          </a>
+        </div>
+
+        <div class="rc-dd-col">
+          <div class="rc-dd-cat">Influenciadores</div>
+          <a class="rc-dd-item" href="#produtos">
+            <span class="rc-dd-dot" style="background:#FF5700;color:#fff">Di</span>
+            <span class="rc-dd-name">Digital Influencers</span>
+            <span class="rc-dd-mods">Awareness e alcance qualificado com matching de creators certos por dados.</span>
+          </a>
+        </div>
+
+        <div class="rc-dd-col rc-dd-col--links">
+          <div class="rc-dd-cat">Explorar</div>
+          <a class="rc-dd-link" href="#produtos">
+            <span class="rc-dd-link__text">
+              <span class="rc-dd-link__name">Novidades no produto</span>
+              <span class="rc-dd-link__sub">O que há de novo no ecossistema Rank</span>
+            </span>
+          </a>
+          <a class="rc-dd-link" href="#industrias">
+            <span class="rc-dd-link__text">
+              <span class="rc-dd-link__name">Setores que atendemos</span>
+              <span class="rc-dd-link__sub">A solução certa para cada indústria</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rc-nav-item"><a class="rc-nav-link" href="#industrias">Segmentos</a></div>
+    <div class="rc-nav-item"><a class="rc-nav-link" href="#cases">Cases</a></div>
+
+    <div class="rc-nav-item">
+      <span class="rc-nav-link">Conteúdo <i class="lucide-ic rc-caret" data-lucide="chevron-down"></i></span>
+      <div class="rc-dropdown rc-dropdown--content">
+        <div class="rc-dd-col">
+          <div class="rc-dd-cat">Aprender</div>
+          <a class="rc-dd-link" href="#">
+            <span class="rc-dd-link__text">
+              <span class="rc-dd-link__name">Blog</span>
+              <span class="rc-dd-link__sub">Insights de mobile, mídia, SEO e dados</span>
+            </span>
+          </a>
+          <a class="rc-dd-link" href="#">
+            <span class="rc-dd-link__text">
+              <span class="rc-dd-link__name">Webinars</span>
+              <span class="rc-dd-link__sub">Sessões ao vivo com nossos especialistas</span>
+            </span>
+          </a>
+        </div>
+        <div class="rc-dd-col">
+          <div class="rc-dd-cat">Materiais ricos</div>
+          <a class="rc-dd-link" href="#">
+            <span class="rc-dd-link__text">
+              <span class="rc-dd-link__name">Guia de ASO 2026</span>
+              <span class="rc-dd-link__sub">Ebook completo de otimização nas lojas</span>
+            </span>
+          </a>
+          <a class="rc-dd-link" href="#">
+            <span class="rc-dd-link__text">
+              <span class="rc-dd-link__name">Benchmark de mídia mobile</span>
+              <span class="rc-dd-link__sub">Dados de performance por setor</span>
+            </span>
+          </a>
+          <a class="rc-dd-link" href="#">
+            <span class="rc-dd-link__text">
+              <span class="rc-dd-link__name">Relatório GEO</span>
+              <span class="rc-dd-link__sub">Como as marcas aparecem nas IAs generativas</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rc-nav-item"><a class="rc-nav-link" href="#sobre">Sobre nós</a></div>
+  </nav>
+
+  <div class="rc-header-actions">
+    <div class="rc-lang" id="lang" role="group" aria-label="Idioma">
+      <button class="rc-lang-btn is-active" type="button">PT-BR</button>
+      <button class="rc-lang-btn" type="button">EN</button>
+      <button class="rc-lang-btn" type="button">ES</button>
+    </div>
+    <a class="rc-btn rc-btn--ghost" href="#">Entrar</a>
+    <a class="rc-btn rc-btn--white" href="#cta">Falar com um consultor</a>
+    <button class="rc-burger" aria-label="Menu"><i class="lucide-ic" data-lucide="menu"></i></button>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<section class="rc-hero" id="hero">
+  <div class="rc-os" aria-hidden="true">
+    <div class="rc-os__bg"></div>
+    <div class="rc-os__grid" data-depth="6"></div>
+    <div class="rc-orb rc-orb--1" data-depth="22"></div>
+    <div class="rc-orb rc-orb--2" data-depth="34"></div>
+    <div class="rc-orb rc-orb--3" data-depth="16"></div>
+    <div class="rc-orb rc-orb--4" data-depth="44"></div>
+    <img class="rc-os__motif" src="assets/marks/arrow-pattern.svg" alt="" />
+    <div class="rc-os__spot"></div>
+
+    <div class="rc-float rc-float--a" data-depth="40">
+      <div class="rc-float__label"><span class="rc-float__dot"></span>Downloads orgânicos</div>
+      <div class="rc-float__value">128.4K</div>
+      <div class="rc-float__delta">▲ 38% no trimestre</div>
+    </div>
+    <div class="rc-float rc-float--b" data-depth="56">
+      <div class="rc-float__label"><span class="rc-float__dot"></span>ROAS médio</div>
+      <div class="rc-float__value">4.7x</div>
+      <div class="rc-float__bars">
+        <i style="height:40%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:80%"></i><i style="height:100%"></i>
+      </div>
+    </div>
+    <div class="rc-float rc-float--c" data-depth="48">
+      <div class="rc-float__label"><span class="rc-float__dot"></span>Citações em IAs</div>
+      <div class="rc-float__value">61%</div>
+      <div class="rc-float__delta">▲ share of voice</div>
+    </div>
+    <div class="rc-float rc-float--d" data-depth="62">
+      <div class="rc-float__label"><span class="rc-float__dot"></span>Alcance qualificado</div>
+      <div class="rc-float__value">8.9M</div>
+      <div class="rc-float__delta">▲ 412 creators ativos</div>
+    </div>
+  </div>
+
+  <div class="rc-hero__topfade" aria-hidden="true"></div>
+
+  <div class="rc-container rc-hero__inner">
+    <div class="rc-eyebrow" style="color: rgb(102, 102, 102)">RANKMYAPP AGORA É</div>
+    <h1 class="rc-hero__title">Rank</h1>
+    <p class="rc-hero__sub">Soluções para transformar<br />
+<em>dados</em>, <em>mídia</em> e <em>influência</em> em crescimento.</p>
+
+    <div class="rc-toggles" id="toggles">
+      <button class="rc-toggle is-active" data-target="rmapp" style="--c:#0050E5;--ink:#fff" data-url="app.rankcloud.com/rankmyapp" data-chip="ASO Intelligence">
+        <span class="rc-toggle__dot"></span>RankMyApp</button>
+      <button class="rc-toggle" data-target="rmads" style="--c:#D7F300;--ink:#00132c" data-url="app.rankcloud.com/rankmyads" data-chip="Performance &amp; Mídia">
+        <span class="rc-toggle__dot"></span>RankMyADS</button>
+      <button class="rc-toggle" data-target="rmgeo" style="--c:#06B6D4;--ink:#00132c" data-url="app.rankcloud.com/rankmygeo" data-chip="GEO Monitor">
+        <span class="rc-toggle__dot"></span>RankMyGEO<span class="rc-toggle__new">novo</span></button>
+      <button class="rc-toggle" data-target="adsint" style="--c:#9B6BFF;--ink:#fff" data-url="app.rankcloud.com/ads-intelligence" data-chip="Ads Intelligence">
+        <span class="rc-toggle__dot"></span>Ads Intelligence<span class="rc-toggle__new">novo</span></button>
+      <button class="rc-toggle" data-target="influencers" style="--c:#FF5700;--ink:#fff" data-url="app.rankcloud.com/influencers" data-chip="Creator Matching">
+        <span class="rc-toggle__dot"></span>Digital Influencers</button>
+    </div>
+
+    <div class="rc-display" id="display">
+      <div class="rc-window rc-window--bare" id="window">
+        <div class="rc-window__bar">
+          <div class="rc-traffic"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
+          <div class="rc-window__url" id="winUrl">app.rankcloud.com/rankmyapp</div>
+          <div class="rc-window__chip" id="winChip" style="background:#0050E5;color:#fff">ASO Intelligence</div>
+        </div>
+        <div class="rc-screen" id="screen">
+<!-- ===== RankMyApp ===== -->
+<div class="rc-screen__panel appScene is-active" data-panel="rmapp" style="--c:#0050E5">
+  <div class="appScene__stage" data-app-parallax>
+    <img class="appScene__img" src="assets/rmads-phones.png" alt="Dois iPhones com a App Store do seu app" />
+    <div class="appScene__fade" aria-hidden="true"></div>
+  </div>
+</div>
+
+<!-- ===== RankMyADS ===== -->
+<div class="rc-screen__panel mk" data-panel="rmads" style="--c:#D7F300">
+  <aside class="mk__side">
+    <div class="mk__brand"><span class="mk__brand-dot"><i class="lucide-ic" data-lucide="mouse-pointer-click"></i></span><span class="mk__brand-name">RankMyADS</span></div>
+    <div class="mk__nav is-on"><i class="lucide-ic" data-lucide="megaphone"></i>Campanhas</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="bot"></i>Bid automation</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="share-2"></i>Programmatic</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="wallet"></i>Investimento</div>
+    <div class="mk__side-foot"><span class="mk__avatar"></span><div><strong>Mercado+</strong>Aquisição paga</div></div>
+  </aside>
+  <main class="mk__main">
+    <div class="mk__top"><div><div class="mk__crumb">Performance &amp; Mídia</div><h3 class="mk__title">Performance de mídia</h3></div><span class="mk__pill"><i class="lucide-ic" data-lucide="sparkles"></i>Bid IA on</span></div>
+    <div class="mk__metrics">
+      <div class="mk__metric"><div class="mk__metric-label">ROAS</div><div class="mk__metric-value">4.7x</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>0.9x</div></div>
+      <div class="mk__metric"><div class="mk__metric-label">CPA</div><div class="mk__metric-value">R$ 12</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-down"></i>-22%</div></div>
+      <div class="mk__metric"><div class="mk__metric-label">Investimento</div><div class="mk__metric-value">R$ 840K</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>no mês</div></div>
+    </div>
+    <div class="mk__panel">
+      <div class="mk__panel-head"><span class="mk__panel-title">ROAS por canal</span><span class="mk__panel-tag">Últimos 30 dias</span></div>
+      <div class="mk__bars">
+        <div class="mk__bar-col"><div class="mk__bar" style="height:54%"></div><span class="mk__bar-x">Google</span></div>
+        <div class="mk__bar-col"><div class="mk__bar hot" style="height:96%"></div><span class="mk__bar-x">Meta</span></div>
+        <div class="mk__bar-col"><div class="mk__bar" style="height:70%"></div><span class="mk__bar-x">TikTok</span></div>
+        <div class="mk__bar-col"><div class="mk__bar" style="height:42%"></div><span class="mk__bar-x">Apple</span></div>
+        <div class="mk__bar-col"><div class="mk__bar" style="height:60%"></div><span class="mk__bar-x">Prog.</span></div>
+        <div class="mk__bar-col"><div class="mk__bar" style="height:34%"></div><span class="mk__bar-x">OOH</span></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ===== RankMyGEO ===== -->
+<div class="rc-screen__panel mk" data-panel="rmgeo" style="--c:#06B6D4">
+  <aside class="mk__side">
+    <div class="mk__brand"><span class="mk__brand-dot"><i class="lucide-ic" data-lucide="bot"></i></span><span class="mk__brand-name">RankMyGEO</span></div>
+    <div class="mk__nav is-on"><i class="lucide-ic" data-lucide="activity"></i>Share of voice</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="quote"></i>Citações</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="brain"></i>Prompts</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="smile"></i>Sentimento</div>
+    <div class="mk__side-foot"><span class="mk__avatar"></span><div><strong>Banco Áureo</strong>Presença em IAs</div></div>
+  </aside>
+  <main class="mk__main">
+    <div class="mk__top"><div><div class="mk__crumb">GEO para IAs generativas</div><h3 class="mk__title">Presença nas IAs</h3></div><span class="mk__pill"><i class="lucide-ic" data-lucide="eye"></i>Monitorando</span></div>
+    <div class="mk__metrics">
+      <div class="mk__metric"><div class="mk__metric-label">Share of voice IA</div><div class="mk__metric-value">61%</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>14 pts</div></div>
+      <div class="mk__metric"><div class="mk__metric-label">Citações / semana</div><div class="mk__metric-value">2.3K</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>27%</div></div>
+      <div class="mk__metric"><div class="mk__metric-label">Sentimento</div><div class="mk__metric-value">+0.72</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>positivo</div></div>
+    </div>
+    <div class="mk__panel">
+      <div class="mk__panel-head"><span class="mk__panel-title">Cobertura por modelo</span><span class="mk__panel-tag">Prompt: "melhor banco digital"</span></div>
+      <div class="mk__list" style="gap:10px">
+        <div class="mk__ai"><span class="mk__ai-logo">G</span><span class="mk__ai-name">ChatGPT</span><span class="mk__ai-badge cited">Citado · pos. 1</span></div>
+        <div class="mk__ai"><span class="mk__ai-logo">C</span><span class="mk__ai-name">Claude</span><span class="mk__ai-badge cited">Citado · pos. 2</span></div>
+        <div class="mk__ai"><span class="mk__ai-logo">P</span><span class="mk__ai-name">Perplexity</span><span class="mk__ai-badge cited">Citado · pos. 1</span></div>
+        <div class="mk__ai"><span class="mk__ai-logo">Ge</span><span class="mk__ai-name">Gemini</span><span class="mk__ai-badge miss">Não citado</span></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ===== Ads Intelligence ===== -->
+<div class="rc-screen__panel mk" data-panel="adsint" style="--c:#9B6BFF">
+  <aside class="mk__side">
+    <div class="mk__brand"><span class="mk__brand-dot"><i class="lucide-ic" data-lucide="radar"></i></span><span class="mk__brand-name">Ads Intelligence</span></div>
+    <div class="mk__nav is-on"><i class="lucide-ic" data-lucide="users"></i>Concorrência</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="image"></i>Criativos</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="pie-chart"></i>Share of voice</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="dollar-sign"></i>Investimento est.</div>
+    <div class="mk__side-foot"><span class="mk__avatar"></span><div><strong>Energexa</strong>Categoria: energia</div></div>
+  </aside>
+  <main class="mk__main">
+    <div class="mk__top"><div><div class="mk__crumb">Inteligência competitiva</div><h3 class="mk__title">Radar de concorrência</h3></div><span class="mk__pill"><i class="lucide-ic" data-lucide="refresh-cw"></i>6 players</span></div>
+    <div class="mk__cols">
+      <div class="mk__panel">
+        <div class="mk__panel-head"><span class="mk__panel-title">Share of voice de mídia</span><span class="mk__panel-tag">Categoria</span></div>
+        <div class="mk__list">
+          <div class="mk__row"><div class="mk__row-main"><div class="mk__row-title">Energexa <span style="color:#9B6BFF">(você)</span></div><div class="mk__pbar"><i style="width:34%"></i></div></div><span class="mk__row-val">34%</span></div>
+          <div class="mk__row"><div class="mk__row-main"><div class="mk__row-title">Concorrente A</div><div class="mk__pbar"><i style="width:26%;background:#5a6b8c"></i></div></div><span class="mk__row-val">26%</span></div>
+          <div class="mk__row"><div class="mk__row-main"><div class="mk__row-title">Concorrente B</div><div class="mk__pbar"><i style="width:19%;background:#5a6b8c"></i></div></div><span class="mk__row-val">19%</span></div>
+          <div class="mk__row"><div class="mk__row-main"><div class="mk__row-title">Outros</div><div class="mk__pbar"><i style="width:21%;background:#5a6b8c"></i></div></div><span class="mk__row-val">21%</span></div>
+        </div>
+      </div>
+      <div class="mk__panel">
+        <div class="mk__panel-head"><span class="mk__panel-title">Criativos ativos</span></div>
+        <div class="mk__metric-value" style="font-size:30px">1.204</div>
+        <div class="mk__metric-delta up" style="margin-bottom:14px"><i class="lucide-ic" data-lucide="arrow-up"></i>89 novos esta semana</div>
+        <div class="mk__tags">
+          <span class="mk__tag">Vídeo · 46%</span><span class="mk__tag">Estático · 38%</span><span class="mk__tag">Carrossel · 16%</span><span class="mk__tag">Promo preço</span><span class="mk__tag">Sazonal</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ===== Digital Influencers ===== -->
+<div class="rc-screen__panel mk" data-panel="influencers" style="--c:#FF5700">
+  <aside class="mk__side">
+    <div class="mk__brand"><span class="mk__brand-dot"><i class="lucide-ic" data-lucide="users"></i></span><span class="mk__brand-name">Influencers</span></div>
+    <div class="mk__nav is-on"><i class="lucide-ic" data-lucide="search"></i>Discovery</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="git-merge"></i>Matching</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="handshake"></i>Campanhas</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="bar-chart-2"></i>Reporting</div>
+    <div class="mk__side-foot"><span class="mk__avatar"></span><div><strong>VitaCare</strong>Awareness Q3</div></div>
+  </aside>
+  <main class="mk__main">
+    <div class="mk__top"><div><div class="mk__crumb">Influência &amp; Awareness</div><h3 class="mk__title">Creators recomendados</h3></div><span class="mk__pill"><i class="lucide-ic" data-lucide="sparkles"></i>Match por IA</span></div>
+    <div class="mk__metrics">
+      <div class="mk__metric"><div class="mk__metric-label">Alcance qualificado</div><div class="mk__metric-value">8.9M</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>1.2M</div></div>
+      <div class="mk__metric"><div class="mk__metric-label">Creators ativos</div><div class="mk__metric-value">412</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>+38</div></div>
+      <div class="mk__metric"><div class="mk__metric-label">Engajamento</div><div class="mk__metric-value">6.4%</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>acima da meta</div></div>
+    </div>
+    <div class="mk__creators">
+      <div class="mk__creator"><div class="mk__creator-av"></div><div class="mk__creator-name">@marina.vida</div><div class="mk__creator-handle">Bem-estar · 840K</div><div class="mk__creator-stat">94% match</div></div>
+      <div class="mk__creator"><div class="mk__creator-av"></div><div class="mk__creator-name">@dr.felipe</div><div class="mk__creator-handle">Saúde · 1.2M</div><div class="mk__creator-stat">91% match</div></div>
+      <div class="mk__creator"><div class="mk__creator-av"></div><div class="mk__creator-name">@rotina.leve</div><div class="mk__creator-handle">Lifestyle · 520K</div><div class="mk__creator-stat">88% match</div></div>
+    </div>
+  </main>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rc-hero__cta">
+      <a class="rc-btn rc-btn--ghost" href="#produtos">Conhecer o produto</a>
+      <a class="rc-btn rc-btn--white" href="#cta">Fale com um consultor</a>
+    </div>
+
+    <div class="rc-hero-clients" style="border-width: 0px">
+      <div class="rc-clients__label" style="font-size: 10px">AS MAIORES MARCAS DO BRASIL JÁ SÃO RANK</div>
+      <div class="rc-clients__track">
+        <span class="rc-client-logo">Banco do Brasil</span>
+        <span class="rc-client-logo">Nubank</span>
+        <span class="rc-client-logo">Keeta</span>
+        <span class="rc-client-logo">iFood</span>
+        <span class="rc-client-logo">Globoplay</span>
+        <span class="rc-client-logo">PicPay</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRODUCTS ============================ -->
+<section class="rc-section rc-section--light" id="produtos">
+  <div class="rc-container">
+    <div class="rc-section-head">
+      <div class="rc-section-eyebrow">NOSSOS PRODUTOS</div>
+      <h2 class="rc-h2">Seja para seu app ou para a sua presença online, <em>a Rank vai te ajudar na sua performance.</em></h2>
+      <p class="rc-lead">Aquisição, visibilidade e inteligência sob o seu comando: ASO, mídia paga e programática, SEO, GEO para IAs generativas, inteligência competitiva e influência, reunidos numa única camada de dados.</p>
+    </div>
+    <div class="rc-showcase">
+      <div class="rc-showcase__list" id="showcaseList"></div>
+      <div class="rc-showcase__media" id="showcaseMedia"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STATS ============================ -->
+<section class="rc-section rc-section--bg" id="cases">
+  <div class="rc-container">
+    <div class="rc-section-head">
+      <div class="rc-section-eyebrow">CASES</div>
+      <h2 class="rc-h2">Crescimento que vira <em>número</em>.</h2>
+      <p class="rc-lead">Marcas enterprise que transformaram dados, mídia e influência em resultado mensurável com o ecossistema Rank.</p>
+    </div>
+    <div class="rc-cases-layout">
+      <div class="rc-cases-main">
+        <div class="rc-cases-row">
+          <article class="rc-case-card" style="--c:#0050E5">
+            <div class="rc-case-card__eyebrow">Fintech · RankMyApp</div>
+            <div class="rc-case-card__metric">+38%</div>
+            <p class="rc-case-card__desc">Instalações orgânicas em 6 meses, priorizando release notes e palavras-chave de alta intenção na loja.</p>
+            <div class="rc-case-card__foot"><span class="rc-case-card__tag">ASO · Reviews</span><span class="rc-case-card__seg">App de banco digital</span></div>
+          </article>
+          <article class="rc-case-card" style="--c:#A8BF00">
+            <div class="rc-case-card__eyebrow">Varejo · RankMyADS</div>
+            <div class="rc-case-card__metric">4.7x</div>
+            <p class="rc-case-card__desc">ROAS médio com automação de bid e mídia programática, sem canibalizar o crescimento orgânico.</p>
+            <div class="rc-case-card__foot"><span class="rc-case-card__tag">Performance</span><span class="rc-case-card__seg">Marketplace nacional</span></div>
+          </article>
+        </div>
+        <div class="rc-bignums">
+          <div class="rc-bignum"><div class="rc-bignum__value">45%</div><div class="rc-bignum__label">do mercado de apps no Brasil</div></div>
+          <div class="rc-bignum"><div class="rc-bignum__value">17</div><div class="rc-bignum__label">países onde operamos</div></div>
+          <div class="rc-bignum"><div class="rc-bignum__value">+10</div><div class="rc-bignum__label">anos de inteligência mobile</div></div>
+        </div>
+      </div>
+      <div class="rc-cases-video">
+        <iframe src="https://www.youtube.com/embed/rjwshlqUU3Y?si=OGVy6lL_EHZt1mlb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ INDUSTRIES ============================ -->
+<section class="rc-section rc-section--light" id="industrias">
+  <div class="rc-container">
+    <div class="rc-section-head">
+      <div class="rc-section-eyebrow">Diagnóstico por segmento</div>
+      <h2 class="rc-h2">Monte a sua <em>recomendação</em>.</h2>
+      <p class="rc-lead">Conte quem é você, qual a sua principal dor e o seu segmento. A gente já sabe o combo do ecossistema Rank que resolve.</p>
+    </div>
+    <div class="rc-diag">
+      <aside class="rc-diag__side">
+        <div class="rc-diag__group">
+          <div class="rc-diag__label">Indústria</div>
+          <div class="rc-diag__tags rc-diag__tags--ind" id="diagIndustry"></div>
+        </div>
+        <div class="rc-diag__group">
+          <div class="rc-diag__label">Principal dor</div>
+          <div class="rc-diag__tags" id="diagPain"></div>
+        </div>
+        <div class="rc-diag__group">
+          <label class="rc-diag__label" for="diagRole">Seu cargo</label>
+          <select id="diagRole" class="rc-diag__select" aria-label="Seu cargo"></select>
+        </div>
+      </aside>
+      <div class="rc-diag__main">
+        <div class="rc-sector__panel" id="sectorPanel"></div>
+
+        <form class="rc-leadform" id="diagLeadForm" novalidate style="font-weight: 300">
+          <h4 class="rc-leadform__title"><span class="rc-leadform__q1">Marcou o seu setor, principal dor e cargo ao lado?</span> <em class="rc-leadform__q2">Complete o cadastro e vamos marcar um papo!</em><span class="rc-leadform__qmark"></span></h4>
+          <div class="rc-leadform__grid">
+            <div class="rc-leadform__row">
+              <label class="rc-field">
+                <span class="rc-field__label">Nome</span>
+                <input class="rc-field__input" type="text" name="nome" placeholder="Nome" autocomplete="name" required />
+              </label>
+              <label class="rc-field">
+                <span class="rc-field__label">E-mail</span>
+                <input class="rc-field__input" type="email" name="email" placeholder="E-mail corporativo" autocomplete="email" required />
+              </label>
+              <label class="rc-field">
+                <span class="rc-field__label">WhatsApp</span>
+                <input class="rc-field__input" type="tel" name="whatsapp" placeholder="WhatsApp" autocomplete="tel" required />
+              </label>
+            </div>
+            <div class="rc-leadform__row">
+              <label class="rc-field">
+                <span class="rc-field__label">Empresa</span>
+                <input class="rc-field__input" type="text" name="empresa" placeholder="Empresa" autocomplete="organization" required />
+              </label>
+              <label class="rc-field">
+                <span class="rc-field__label">Funcionários</span>
+                <select class="rc-field__input rc-field__select" name="funcionarios" required>
+                  <option value="" disabled selected>Funcionários</option>
+                  <option>1–10</option>
+                  <option>11–50</option>
+                  <option>51–200</option>
+                  <option>201–500</option>
+                  <option>501–1000</option>
+                  <option>1000+</option>
+                </select>
+              </label>
+              <label class="rc-field">
+                <span class="rc-field__label">Site</span>
+                <input class="rc-field__input" type="url" name="site" placeholder="Site da empresa" autocomplete="url" />
+              </label>
+              <button class="rc-btn rc-btn--dark rc-leadform__submit" type="submit">Falar com um consultor</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FINAL CTA ============================ -->
+<section class="rc-section rc-cta" id="cta">
+  <div class="rc-container rc-cta-inner">
+    <div class="rc-section-eyebrow" style="color: rgb(153, 153, 153); justify-content: center">Vamos crescer juntos</div>
+    <h2 class="rc-h2" style="color:#fff">A gente já sabe o que <em>pode te ajudar</em>.</h2>
+    <p class="rc-lead" style="margin:0 auto;color:rgba(255,255,255,0.78)">Agende um papo com a gente, nos conte o seu desafio e receba um diagnóstico gratuito de como podemos acelerar os seus resultados em<br><span class="rc-rotator" id="ctaRotator" aria-live="polite"><span class="rc-rotator__word is-in">mídia programática.</span></span></p>
+    <div class="rc-cta-row">
+      <a class="rc-btn rc-btn--ghost" href="#produtos">Conhecer os produtos</a>
+      <a class="rc-btn rc-btn--white" href="#">Falar com um consultor</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="rc-footer">
+  <div class="rc-container">
+    <div class="rc-footer__main">
+      <div class="rc-footer__brand">
+        <span class="rc-wordmark rc-wordmark--footer">Rank</span>
+        <p class="rc-footer__tagline">Dados, mídia e influência conectados numa única camada de inteligência.</p>
+      </div>
+      <div class="rc-footer__cols">
+        <div class="rc-footer__col">
+          <div class="rc-footer__coltitle">Produtos</div>
+          <a href="#produtos">RankMyApp</a>
+          <a href="#produtos">RankMyAds</a>
+          <a href="#produtos">RankMyGEO</a>
+          <a href="#produtos">Ads Intelligence</a>
+          <a href="#produtos">Digital Influencers</a>
+        </div>
+        <div class="rc-footer__col">
+          <div class="rc-footer__coltitle">Empresa</div>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#cases">Cases</a>
+          <a href="#industrias">Segmentos</a>
+          <a href="#">Carreiras</a>
+          <a href="#cta">Falar com um consultor</a>
+        </div>
+        <div class="rc-footer__col">
+          <div class="rc-footer__coltitle">Conteúdo</div>
+          <a href="#">Blog</a>
+          <a href="#">Webinars</a>
+          <a href="#">Guia de ASO 2026</a>
+          <a href="#">Benchmark de mídia</a>
+          <a href="#">Relatório GEO</a>
+        </div>
+      </div>
+      <div class="rc-footer__follow">
+        <div class="rc-footer__social">
+          <a href="#" aria-label="LinkedIn"><i class="lucide-ic" data-lucide="linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="lucide-ic" data-lucide="instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="lucide-ic" data-lucide="youtube"></i></a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M16.5 3c.31 2.13 1.5 3.63 3.5 3.86v2.43c-1.16.11-2.36-.18-3.5-.79v5.84c0 3.3-2.4 5.66-5.5 5.66-2.93 0-5.2-2.23-5.2-5.12 0-3.02 2.32-5.22 5.32-5.1.3.01.59.04.88.1v2.64c-.3-.1-.6-.17-.92-.17-1.42 0-2.58 1.13-2.58 2.57 0 1.5 1.1 2.6 2.5 2.6 1.49 0 2.72-1.11 2.72-3.02V3h2.3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="rc-footer__bottom">
+      <div>© 2026 Grupo Rank · RankMyApp</div>
+      <div class="rc-footer__legal">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@0.408.0/dist/umd/lucide.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
+
+<style id="__om-edit-overrides">
+#sectorPanel >.rc-sector__cases { border-width: 0px !important }
+#sectorPanel >.rc-sector__cases { margin: 28px 0px 25px !important }
+#sectorPanel >.rc-sector__cases { padding: 24px 0px 25px !important }
+#sectorPanel >.rc-sector__cases { padding: 24px 0px !important }
+#sectorPanel >.rc-sector__cases { margin: 28px 0px !important }
+#sectorPanel >.rc-sector__cases { margin: 20px 0px 28px !important }
+#sectorPanel >.rc-sector__cases { padding: 10px 0px 24px !important }
+#sectorPanel >.rc-sector__cases { padding: 10px 0px !important }
+#sectorPanel >.rc-sector__cases { margin: 10px 0px 28px !important }
+#sectorPanel >.rc-sector__cases { margin: 10px 0px !important }
+</style>
