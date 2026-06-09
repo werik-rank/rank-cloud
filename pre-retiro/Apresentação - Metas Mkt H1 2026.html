@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metas de Marketing — H1 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="deck.css">
+</head>
+<body>
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <rect width="400" height="400" fill="#0d0f12"/>
+    <rect x="120" y="150" width="160" height="70" rx="6" fill="#d6ff3f"/>
+    <text x="200" y="135" text-anchor="middle" fill="#e8eaed" font-family="sans-serif" font-size="34" font-weight="700">Metas</text>
+    <text x="200" y="198" text-anchor="middle" fill="#0d0f12" font-family="sans-serif" font-size="34" font-weight="700">H1 2026</text>
+    <text x="200" y="262" text-anchor="middle" fill="#8a8f98" font-family="sans-serif" font-size="22">Marketing · RankMyApp</text>
+  </svg>
+</template>
+<deck-stage width="1920" height="1080">
+
+  <!-- ===================== 1 · CAPA ===================== -->
+  <section class="s-dark cover" data-label="Capa" data-screen-label="01 Capa">
+    <div class="glow"></div>
+    <div class="watermark">26</div>
+    <div class="pad">
+      <div class="eyebrow anim"><span>Marketing · RankMyApp</span></div>
+      <h1 class="anim">Metas de Marketing<br><span class="li">H1 2026</span></h1>
+      <div class="sub anim">Atingimento do 1º semestre — Janeiro a Junho de 2026.<br>Resultados, gaps e o que isso aponta para o H2.</div>
+    </div>
+    <div class="meta">
+      <div>Apresentado por <b>[seu nome]</b></div>
+      <div><b>Jun · 2026</b></div>
+    </div>
+  </section>
+
+  <!-- ===================== 2 · PLACAR ===================== -->
+  <section data-label="Placar" data-screen-label="02 Placar">
+    <div class="pad">
+      <div class="kicker anim"><span class="num">01</span><span class="rule"></span>Placar do semestre</div>
+      <h2 class="slide-h anim">O placar do semestre</h2>
+      <div class="kpigrid">
+        <div class="kpi anim">
+          <div class="klabel">Calls qualificadas</div>
+          <div class="knum tnum">148<span class="of"> / 228</span></div>
+          <div class="kbar accent" style="margin-top:auto;"><div class="kpct accent">65%</div><i style="width:65%"></i></div>
+          <div class="ksub">meta do H1 · <b>−80 calls</b></div>
+        </div>
+        <div class="kpi anim">
+          <div class="klabel">Vendas</div>
+          <div class="knum tnum">13<span class="of"> / 25</span></div>
+          <div class="kbar bad" style="margin-top:auto;"><div class="kpct bad">52%</div><i style="width:52%"></i></div>
+          <div class="ksub">meta do H1 · <b>−12 vendas</b></div>
+        </div>
+        <div class="kpi feature anim">
+          <div class="klabel">Receita gerada</div>
+          <div class="knum tnum">R$ 232k</div>
+          <div class="ksub" style="margin-top:auto;">Q1 <b>R$ 125k</b> · Q2 <b>R$ 108k</b></div>
+        </div>
+        <div class="kpi anim">
+          <div class="klabel">Conversão call → venda</div>
+          <div class="knum tnum">8,78%</div>
+          <div class="ksub" style="margin-top:auto;">Mobile Intelligence (MI) <b>12,96%</b> · RankMyAds (MP) <b>10,53%</b></div>
+        </div>
+      </div>
+      <div class="takeaway"><span class="dot">→</span><div>Geramos <b>demanda</b>, mas a <b>conversão</b> ficou abaixo — o gargalo do semestre está no fundo do funil, não no topo.</div></div>
+    </div>
+  </section>
+
+  <!-- ===================== 3 · DASH MENSAL ===================== -->
+  <section data-label="Dash mensal" data-screen-label="03 Dash mensal">
+    <div class="pad">
+      <div class="dashtop">
+        <div>
+          <div class="kicker anim"><span class="num">02</span><span class="rule"></span>Dash mensal</div>
+          <h2 class="slide-h anim">Performance mês a mês</h2>
+        </div>
+        <div class="segs anim">
+          <div class="segwrap">
+            <span class="seglbl">Quebra</span>
+            <div class="seg" id="dimSeg">
+              <button class="on" data-dim="produto">Por produto</button>
+              <button data-dim="canal">Por canal</button>
+            </div>
+          </div>
+          <div class="segwrap">
+            <span class="seglbl">Métrica</span>
+            <div class="seg" id="metSeg">
+              <button class="on" data-met="calls">Calls</button>
+              <button data-met="vendas">Vendas</button>
+              <button data-met="receita">Receita</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="matrix anim" id="dashMatrix"></div>
+      <div class="dashchart anim" id="dashChart" style="display:none;"></div>
+      <div class="dashlegend" id="dashLegend"></div>
+    </div>
+  </section>
+
+  <!-- ===================== 4 · FUNIL ===================== -->
+  <section data-label="Funil" data-screen-label="04 Funil" class="funnel-slide">
+    <div class="pad">
+      <div class="dashtop">
+        <div>
+          <div class="kicker anim"><span class="num">03</span><span class="rule"></span>Funil de conversão</div>
+          <h2 class="slide-h anim">Do lead à venda</h2>
+        </div>
+        <div class="segs anim">
+          <div class="segwrap">
+            <span class="seglbl">Período</span>
+            <div class="seg" id="funSeg">
+              <button class="on" data-fun="H1">H1</button>
+              <button data-fun="0">Jan</button>
+              <button data-fun="1">Fev</button>
+              <button data-fun="2">Mar</button>
+              <button data-fun="3">Abr</button>
+              <button data-fun="4">Mai</button>
+              <button data-fun="5">Jun</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prodpick anim" id="prodPick">
+        <span class="ppl">Produtos</span>
+        <button class="pp on" data-prod="MP" aria-pressed="true">RankMyAds</button>
+        <button class="pp on" data-prod="MI" aria-pressed="true">RankMyApp</button>
+        <button class="pp on" data-prod="DataRank" aria-pressed="true">DataRank</button>
+        <button class="pp on" data-prod="DI" aria-pressed="true">Digital Inf.</button>
+      </div>
+      <div class="funnelwrap">
+        <div class="funnel anim" id="funnelBody"></div>
+        <div class="revcard anim" id="revCard"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5 · CAC × LTV ===================== -->
+  <section data-label="CAC × LTV" data-screen-label="05 CAC LTV">
+    <div class="pad">
+      <div class="kicker anim"><span class="num">04</span><span class="rule"></span>Economia por canal</div>
+      <h2 class="slide-h anim">CAC e LTV por canal</h2>
+      <div class="anim" style="font-size:24px;color:var(--txt-2);margin-top:14px;">CAC = gasto de mídia do H1 ÷ vendas do canal &nbsp;·&nbsp; LTV = ticket médio mensal × tempo de contrato.</div>
+      <div class="clvgrid">
+        <div class="clv anim" style="--cc:#3b82f6;">
+          <div class="chd"><div class="cname"><span class="cdot"></span>Ads</div><div class="cvendas">4 vendas</div></div>
+          <div class="clvrows">
+            <div class="clvrow invest"><span class="rl">Investido H1</span><span class="rv">R$ 775k</span></div>
+            <div class="clvrow"><span class="rl">CAC</span><span class="rv">R$ 194k</span></div>
+            <div class="clvrow"><span class="rl">LTV médio</span><span class="rv">R$ 81k</span></div>
+          </div>
+          <div class="ratio">
+            <div class="rtop"><div class="rlbl">LTV / CAC</div><div class="rnum bad">0,42×</div></div>
+            <div class="rgauge"><i class="bad" style="width:14%;"></i><div class="rmark" style="left:33.3%;"><span>break-even 1×</span></div></div>
+            <div class="rverdict bad">Abaixo do break-even — o gasto direto não se paga.</div>
+          </div>
+        </div>
+        <div class="clv anim" style="--cc:#7c3aed;">
+          <div class="chd"><div class="cname"><span class="cdot"></span>Eventos</div><div class="cvendas">5 vendas</div></div>
+          <div class="clvrows">
+            <div class="clvrow invest"><span class="rl">Investido H1</span><span class="rv">R$ 370k</span></div>
+            <div class="clvrow"><span class="rl">CAC</span><span class="rv">R$ 74k</span></div>
+            <div class="clvrow"><span class="rl">LTV médio</span><span class="rv">R$ 105k</span></div>
+          </div>
+          <div class="ratio">
+            <div class="rtop"><div class="rlbl">LTV / CAC</div><div class="rnum amber">1,42×</div></div>
+            <div class="rgauge"><i class="amber" style="width:47%;"></i><div class="rmark" style="left:33.3%;"><span>break-even 1×</span></div></div>
+            <div class="rverdict amber">Positivo, mas ainda longe da meta de 3×.</div>
+          </div>
+        </div>
+        <div class="clv anim" style="--cc:#0f9d6b;">
+          <div class="chd"><div class="cname"><span class="cdot"></span>Inbound</div><div class="cvendas">4 vendas</div></div>
+          <div class="clvrows">
+            <div class="clvrow invest"><span class="rl">Investido H1</span><span class="rv na">s/ dados</span></div>
+            <div class="clvrow"><span class="rl">CAC</span><span class="rv na">—</span></div>
+            <div class="clvrow"><span class="rl">LTV médio</span><span class="rv">R$ 98k</span></div>
+          </div>
+          <div class="ratio">
+            <div class="rtop"><div class="rlbl">LTV / CAC</div><div class="rnum na">N/D</div></div>
+            <div class="rgauge empty"><div class="rmark" style="left:33.3%;"><span>break-even 1×</span></div></div>
+            <div class="rverdict na">Maior fidelização (9,8 m) — falta o custo p/ fechar a conta.</div>
+          </div>
+        </div>
+        <div class="clv total anim" style="--cc:var(--accent-deep);">
+          <div class="chd"><div class="cname"><span class="cdot"></span>Marketing</div><div class="cvendas">13 vendas</div></div>
+          <div class="clvrows">
+            <div class="clvrow invest"><span class="rl">Investido H1</span><span class="rv">R$ 1,14M</span></div>
+            <div class="clvrow"><span class="rl">CAC misto</span><span class="rv">R$ 88k</span></div>
+            <div class="clvrow"><span class="rl">LTV médio</span><span class="rv">R$ 96k</span></div>
+          </div>
+          <div class="ratio">
+            <div class="rtop"><div class="rlbl">LTV / CAC</div><div class="rnum amber">1,09×</div></div>
+            <div class="rgauge"><i class="amber" style="width:36%;"></i><div class="rmark" style="left:33.3%;"><span>break-even 1×</span></div></div>
+            <div class="rverdict amber">No limite do break-even — soma Ads + Eventos (Inbound não mapeado).</div>
+          </div>
+        </div>
+      </div>
+      <div class="clvnote"><span class="dot">→</span><div>Só <b>Eventos</b> tem retorno positivo. <b>Ads</b> pesa na atribuição direta, mas sustenta o topo de funil de toda a operação — por isso o <b>CAC misto (R$ 88k/venda)</b> é a leitura mais justa.</div><span class="pill">Meta saudável LTV/CAC ≥ 3×</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== 6 · TOP 3 ===================== -->
+  <section data-label="Top 3" data-screen-label="06 Top 3">
+    <div class="pad">
+      <div class="kicker anim"><span class="num">05</span><span class="rule"></span>O que entregamos</div>
+      <h2 class="slide-h anim">Top 3 que entregamos</h2>
+      <div class="top3">
+        <div class="t3card anim">
+          <div class="rank">#1</div>
+          <div class="big tnum">88<span class="u">%</span></div>
+          <h3>RankMyApp - Mobile Intelligence (MI) virou a referência</h3>
+          <p>Maior atingimento de vendas do semestre (7 de 8) e a melhor conversão da casa.</p>
+          <div class="tag"><span class="ic"></span>conversão 12,96% · líder em eficiência</div>
+        </div>
+        <div class="t3card anim">
+          <div class="rank">#2</div>
+          <div class="big tnum">R$ 232k</div>
+          <h3>Receita no semestre</h3>
+          <p>Gerada por RankMyAds (MP) e RankMyApp - Mobile Intelligence (MI), com pico em Maio (R$ 82k) puxado pelo motor de Marketing de Performance.</p>
+          <div class="tag"><span class="ic"></span>Q1 R$ 125k · Q2 R$ 108k</div>
+        </div>
+        <div class="t3card anim">
+          <div class="rank">#3</div>
+          <div class="big tnum">148</div>
+          <h3>Calls qualificadas</h3>
+          <p>Topo de funil saudável e consistente no Q1 — a máquina de geração de demanda está provada.</p>
+          <div class="tag"><span class="ic"></span>Q1 a 82% da meta de calls</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5 · O QUE NÃO ENTREGAMOS ===================== -->
+  <section data-label="Gaps" data-screen-label="07 Gaps">
+    <div class="pad">
+      <div class="kicker anim"><span class="num">06</span><span class="rule"></span>O que ficou pra trás</div>
+      <h2 class="slide-h anim">O que não entregamos — e por quê</h2>
+      <div class="gaptable anim">
+        <div class="gh">Gap</div>
+        <div class="gh">Por quê</div>
+
+        <div class="gcell"><span class="glabel">Vendas a 52% da meta</span><span class="gnum">13 de 25 · −12 vendas</span></div>
+        <div class="gcell why">A demanda veio, mas a conversão fundo-de-funil não acompanhou em todos os produtos.<span class="draft">✎ rascunho — confirmar causa real</span></div>
+
+        <div class="gcell"><span class="glabel">DataRank e Digital Influencers (DI): 0 vendas</span><span class="gnum">37 calls geradas · R$ 0 de receita</span></div>
+        <div class="gcell why">Produtos geram conversa (29 + 8 calls) mas não fecham — falta oferta / processo comercial dedicado.<span class="draft">✎ rascunho — confirmar causa real</span></div>
+
+        <div class="gcell"><span class="glabel">Colapso em Junho</span><span class="gnum">calls caíram de 38 (Mai) → 2 (Jun)</span></div>
+        <div class="gcell why">Queda abrupta no fim do semestre derrubou o atingimento do Q2 (53% vs 82% no Q1).<span class="draft">✎ rascunho — confirmar causa real</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 6 · LEITURAS H2 ===================== -->
+  <section class="s-accent" data-label="Leituras H2" data-screen-label="08 Leituras H2">
+    <div class="pad">
+      <div class="kicker anim"><span class="num">07</span><span class="rule"></span>Leituras para o H2</div>
+      <h2 class="slide-h anim">O que isso revela para o H2</h2>
+      <div class="insights">
+        <div class="ins anim">
+          <div class="n">01</div>
+          <h3>O gargalo é conversão, não volume</h3>
+          <p>148 calls renderam só 13 vendas. O H2 precisa atacar o fundo do funil antes de pedir mais topo.</p>
+          <div class="stat">8,78% call → venda</div>
+        </div>
+        <div class="ins anim">
+          <div class="n">02</div>
+          <h3>Dobrar a aposta no RankMyApp - Mobile Intelligence (MI)</h3>
+          <p>É o produto que converte melhor e bate meta. Replicar o playbook do MI nos demais é a alavanca mais óbvia.</p>
+          <div class="stat">MI converte 12,96%</div>
+        </div>
+        <div class="ins anim">
+          <div class="n">03</div>
+          <h3>Decidir sobre DataRank e Digital Influencers (DI)</h3>
+          <p>Geram demanda mas não receita. O H2 exige uma escolha: estruturar o closing ou despriorizar.</p>
+          <div class="stat">R$ 0 de receita no H1</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 7 · PRIORIDADES / FECHO ===================== -->
+  <section class="s-dark" data-label="Prioridades H2" data-screen-label="09 Prioridades">
+    <div class="pad">
+      <div class="kicker anim"><span class="num">08</span><span class="rule"></span>Para onde vamos</div>
+      <h2 class="slide-h anim">Prioridades para o H2</h2>
+      <div class="prio">
+        <div class="row anim"><div class="pn tnum">1</div><div class="ptxt">Subir a conversão call → venda<span>Atacar o fundo de funil — meta de sair de 8,78% para dois dígitos.</span></div></div>
+        <div class="row anim"><div class="pn tnum">2</div><div class="ptxt">Escalar o playbook do RankMyApp - Mobile Intelligence (MI)<span>Levar o que funciona no MI para RankMyAds (MP) e demais produtos.</span></div></div>
+        <div class="row anim"><div class="pn tnum">3</div><div class="ptxt">Definir o futuro de DataRank e Digital Influencers (DI)<span>Estruturar processo comercial ou redirecionar o investimento.</span></div></div>
+      </div>
+      <div class="closeline">H2 2026: menos sobre <span>gerar leads</span> — mais sobre <span>convertê-los</span>.</div>
+    </div>
+  </section>
+
+</deck-stage>
+
+<script src="deck-stage.js"></script>
+<script src="deck-dash.js"></script>
+<script src="deck-funnel.js"></script>
+<script>
+  // re-render dash/funil on slide activation so sizing settles after layout
+  document.querySelector('deck-stage').addEventListener('slidechange', (e)=>{
+    const sl = e.detail.slide; if(!sl) return;
+    if(sl.querySelector('#dashMatrix') && window.__renderDash) requestAnimationFrame(()=>window.__renderDash());
+    if(sl.querySelector('#funnelBody') && window.__renderFunnel) requestAnimationFrame(()=>window.__renderFunnel());
+  });
+</script>
+</body>
+</html>
