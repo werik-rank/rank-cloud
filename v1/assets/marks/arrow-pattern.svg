@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <pattern id="arrow-pat" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <g transform="translate(8,8) scale(0.8)" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+        <path d="M16 44 L32 26 L48 44" fill="none"></path>
+        <path d="M32 26 L32 56" fill="none"></path>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#arrow-pat)"></rect>
+</svg>
