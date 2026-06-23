@@ -31,26 +31,39 @@
       <span class="rc-nav-link">Produtos <i class="lucide-ic rc-caret" data-lucide="chevron-down"></i></span>
       <div class="rc-dropdown rc-dropdown--mega">
         <div class="rc-dd-col">
-          <div class="rc-dd-cat">Produtos</div>
+          <div class="rc-dd-cat">Para apps</div>
           <a class="rc-dd-item" href="produtos/rankmyapp/index.html">
             <span class="rc-dd-dot" style="background:#0050E5;color:#fff">RmA</span>
             <span class="rc-dd-name">RankMyApp</span>
             <span class="rc-dd-mods">Mais downloads orgânicos e melhor reputação na loja, sem depender só de mídia.</span>
           </a>
-          <a class="rc-dd-item" href="produtos/rankmyads/index.html">
-            <span class="rc-dd-dot" style="background:#D7F300;color:#00132c">RmA</span>
+        </div>
+
+        <div class="rc-dd-col">
+          <div class="rc-dd-cat">Para anúncios</div>
+          <a class="rc-dd-item" href="#produtos">
+            <span class="rc-dd-dot" style="background:#D7F300">RmA</span>
             <span class="rc-dd-name">RankMyAds</span>
             <span class="rc-dd-mods">Mídia paga eficiente e ROAS escalável em todos os canais, do programmatic ao Apple Ads.</span>
+          </a>
+          <a class="rc-dd-item" href="#produtos">
+            <span class="rc-dd-dot" style="background:#7C3AED;color:#fff">Adi</span>
+            <span class="rc-dd-name"><span class="rc-dd-new">novo</span>Ads Intelligence</span>
+            <span class="rc-dd-mods">Decisões de mídia guiadas pela inteligência de criativos e investimento da concorrência.</span>
           </a>
         </div>
 
         <div class="rc-dd-col">
-          <div class="rc-dd-cat" aria-hidden="true" style="visibility:hidden">Produtos</div>
-          <a class="rc-dd-item" href="produtos/rankmygeo/index.html">
-            <span class="rc-dd-dot" style="background:#06B6D4;color:#00132c">RmG</span>
+          <div class="rc-dd-cat">Para sites</div>
+          <a class="rc-dd-item" href="#produtos">
+            <span class="rc-dd-dot" style="background:#06B6D4">RmG</span>
             <span class="rc-dd-name"><span class="rc-dd-new">novo</span>RankMyGEO</span>
             <span class="rc-dd-mods">Sua marca presente e citada nas respostas de ChatGPT, Claude, Perplexity e Gemini.</span>
           </a>
+        </div>
+
+        <div class="rc-dd-col">
+          <div class="rc-dd-cat">Influenciadores</div>
           <a class="rc-dd-item" href="#produtos">
             <span class="rc-dd-dot" style="background:#FF5700;color:#fff">Di</span>
             <span class="rc-dd-name">Digital Influencers</span>
@@ -180,11 +193,6 @@
     <p class="rc-hero__sub">Soluções para transformar<br />
 <em>dados</em>, <em>mídia</em> e <em>influência</em> em crescimento.</p>
 
-    <div class="rc-hero__cta">
-      <a class="rc-btn rc-btn--ghost" href="#produtos">Conhecer o produto</a>
-      <a class="rc-btn rc-btn--white" href="#cta">Fale com um consultor</a>
-    </div>
-
     <div class="rc-toggles" id="toggles">
       <button class="rc-toggle is-active" data-target="rmapp" style="--c:#0050E5;--ink:#fff" data-url="app.rankcloud.com/rankmyapp" data-chip="ASO Intelligence">
         <span class="rc-toggle__dot"></span>RankMyApp</button>
@@ -192,10 +200,8 @@
         <span class="rc-toggle__dot"></span>RankMyADS</button>
       <button class="rc-toggle" data-target="rmgeo" style="--c:#06B6D4;--ink:#00132c" data-url="app.rankcloud.com/rankmygeo" data-chip="GEO Monitor">
         <span class="rc-toggle__dot"></span>RankMyGEO<span class="rc-toggle__new">novo</span></button>
-      <!-- Ads Intelligence — temporarily hidden; launching next month
       <button class="rc-toggle" data-target="adsint" style="--c:#9B6BFF;--ink:#fff" data-url="app.rankcloud.com/ads-intelligence" data-chip="Ads Intelligence">
         <span class="rc-toggle__dot"></span>Ads Intelligence<span class="rc-toggle__new">novo</span></button>
-      -->
       <button class="rc-toggle" data-target="influencers" style="--c:#FF5700;--ink:#fff" data-url="app.rankcloud.com/influencers" data-chip="Creator Matching">
         <span class="rc-toggle__dot"></span>Digital Influencers</button>
     </div>
@@ -211,7 +217,7 @@
 <!-- ===== RankMyApp ===== -->
 <div class="rc-screen__panel appScene is-active" data-panel="rmapp" style="--c:#0050E5">
   <div class="appScene__stage" data-app-parallax>
-    <img class="appScene__img" src="uploads/rankmyapp-hero-9ed04492.png" alt="Mão segurando iPhone com App Store aberta" />
+    <img class="appScene__img" src="assets/rmads-phones.png" alt="Dois iPhones com a App Store do seu app" />
     <div class="appScene__fade" aria-hidden="true"></div>
   </div>
 </div>
@@ -276,7 +282,7 @@
   </main>
 </div>
 
-<!-- ===== Ads Intelligence — temporarily hidden; launching next month
+<!-- ===== Ads Intelligence ===== -->
 <div class="rc-screen__panel mk" data-panel="adsint" style="--c:#9B6BFF">
   <aside class="mk__side">
     <div class="mk__brand"><span class="mk__brand-dot"><i class="lucide-ic" data-lucide="radar"></i></span><span class="mk__brand-name">Ads Intelligence</span></div>
@@ -309,22 +315,38 @@
     </div>
   </main>
 </div>
--->
 
 <!-- ===== Digital Influencers ===== -->
-<div class="rc-screen__panel infl-scene" data-panel="influencers" style="--c:#FF5700">
-  <img class="infl-scene__cover" src="uploads/hero-Digital-Influencers-1-3224ac70.png" alt="Digital Influencers" />
+<div class="rc-screen__panel mk" data-panel="influencers" style="--c:#FF5700">
+  <aside class="mk__side">
+    <div class="mk__brand"><span class="mk__brand-dot"><i class="lucide-ic" data-lucide="users"></i></span><span class="mk__brand-name">Influencers</span></div>
+    <div class="mk__nav is-on"><i class="lucide-ic" data-lucide="search"></i>Discovery</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="git-merge"></i>Matching</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="handshake"></i>Campanhas</div>
+    <div class="mk__nav"><i class="lucide-ic" data-lucide="bar-chart-2"></i>Reporting</div>
+    <div class="mk__side-foot"><span class="mk__avatar"></span><div><strong>VitaCare</strong>Awareness Q3</div></div>
+  </aside>
+  <main class="mk__main">
+    <div class="mk__top"><div><div class="mk__crumb">Influência &amp; Awareness</div><h3 class="mk__title">Creators recomendados</h3></div><span class="mk__pill"><i class="lucide-ic" data-lucide="sparkles"></i>Match por IA</span></div>
+    <div class="mk__metrics">
+      <div class="mk__metric"><div class="mk__metric-label">Alcance qualificado</div><div class="mk__metric-value">8.9M</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>1.2M</div></div>
+      <div class="mk__metric"><div class="mk__metric-label">Creators ativos</div><div class="mk__metric-value">412</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>+38</div></div>
+      <div class="mk__metric"><div class="mk__metric-label">Engajamento</div><div class="mk__metric-value">6.4%</div><div class="mk__metric-delta up"><i class="lucide-ic" data-lucide="arrow-up"></i>acima da meta</div></div>
+    </div>
+    <div class="mk__creators">
+      <div class="mk__creator"><div class="mk__creator-av"></div><div class="mk__creator-name">@marina.vida</div><div class="mk__creator-handle">Bem-estar · 840K</div><div class="mk__creator-stat">94% match</div></div>
+      <div class="mk__creator"><div class="mk__creator-av"></div><div class="mk__creator-name">@dr.felipe</div><div class="mk__creator-handle">Saúde · 1.2M</div><div class="mk__creator-stat">91% match</div></div>
+      <div class="mk__creator"><div class="mk__creator-av"></div><div class="mk__creator-name">@rotina.leve</div><div class="mk__creator-handle">Lifestyle · 520K</div><div class="mk__creator-stat">88% match</div></div>
+    </div>
+  </main>
 </div>
         </div>
       </div>
     </div>
 
-    <div class="infl-hero">
-      <div class="infl-hero__scene" id="inflScene">
-        <img class="infl-hero__card infl-hero__card--left" src="uploads/hero-Digital-Influencers-2-6efd80b3.png" alt="" data-depth="0.06" />
-        <img class="infl-hero__card infl-hero__card--right" src="uploads/hero-Digital-Influencers-3-0ea66940.png" alt="" data-depth="0.04" />
-        <img class="infl-hero__people" src="uploads/hero-Digital-Influencers-1-3224ac70.png" alt="Digital Influencers" data-depth="0.015" />
-      </div>
+    <div class="rc-hero__cta">
+      <a class="rc-btn rc-btn--ghost" href="#produtos">Conhecer o produto</a>
+      <a class="rc-btn rc-btn--white" href="#cta">Fale com um consultor</a>
     </div>
 
     <div class="rc-hero-clients" style="border-width: 0px">
@@ -351,7 +373,6 @@
     </div>
     <div class="rc-showcase">
       <div class="rc-showcase__list" id="showcaseList"></div>
-      <div class="rc-showcase__features" id="showcaseFeatures"></div>
       <div class="rc-showcase__media" id="showcaseMedia"></div>
     </div>
   </div>
@@ -492,9 +513,9 @@
         <div class="rc-footer__col">
           <div class="rc-footer__coltitle">Produtos</div>
           <a href="#produtos">RankMyApp</a>
-          <a href="produtos/rankmyads/index.html">RankMyAds</a>
+          <a href="#produtos">RankMyAds</a>
           <a href="#produtos">RankMyGEO</a>
-          <!-- Ads Intelligence — temporarily hidden; launching next month -->
+          <a href="#produtos">Ads Intelligence</a>
           <a href="#produtos">Digital Influencers</a>
         </div>
         <div class="rc-footer__col">
@@ -502,7 +523,7 @@
           <a href="#sobre">Sobre nós</a>
           <a href="#cases">Cases</a>
           <a href="#industrias">Segmentos</a>
-          <a href="trabalhe-conosco/index.html">Carreiras</a>
+          <a href="#">Carreiras</a>
           <a href="#cta">Falar com um consultor</a>
         </div>
         <div class="rc-footer__col">
@@ -538,36 +559,6 @@
 
 <script src="https://unpkg.com/lucide@0.408.0/dist/umd/lucide.min.js"></script>
 <script src="assets/app.js"></script>
-<script>
-/* Parallax for Digital Influencers hero */
-(function () {
-  var scene = document.getElementById('inflScene');
-  if (!scene) return;
-  var hero = document.querySelector('.rc-hero');
-  var mx = 0, my = 0, cx = 0, cy = 0, rafId;
-
-  function tick() {
-    cx += (mx - cx) * 0.07;
-    cy += (my - cy) * 0.07;
-    scene.querySelectorAll('[data-depth]').forEach(function (el) {
-      var d = parseFloat(el.dataset.depth);
-      el.style.transform = 'translate(' + (cx * d).toFixed(2) + 'px,' + (cy * d).toFixed(2) + 'px)';
-    });
-    rafId = requestAnimationFrame(tick);
-  }
-
-  hero.addEventListener('mousemove', function (e) {
-    var r = hero.getBoundingClientRect();
-    mx = e.clientX - (r.left + r.width / 2);
-    my = e.clientY - (r.top + r.height / 2);
-    if (!rafId) tick();
-  });
-
-  hero.addEventListener('mouseleave', function () {
-    mx = 0; my = 0;
-  });
-})();
-</script>
 </body>
 </html>
 

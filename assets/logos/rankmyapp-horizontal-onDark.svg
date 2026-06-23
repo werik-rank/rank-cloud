@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" fill="none">
+  <g transform="translate(4,4)">
+    <rect x="0" y="0" width="48" height="48" rx="11" fill="#FFFFFF"></rect>
+    <g transform="translate(8,8) scale(0.5)">
+      <path d="M16 44 L32 26 L48 44 L40 44 L40 56 L24 56 L24 44 Z" fill="#00132C"></path>
+    </g>
+  </g>
+  <text x="62" y="36" font-family="&#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5" fill="#FFFFFF">RankMyApp</text>
+</svg>

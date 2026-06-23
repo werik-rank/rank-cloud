@@ -7,93 +7,49 @@
     { c: '#0050E5', ti: '#fff', abbr: 'RmA', icon: 'trending-up', name: 'RankMyApp', line: 'Mobile Intelligence · ASO',
       blurb: 'Crescimento orgânico nas lojas com ASO e inteligência de reviews.',
       benefit: 'Mais downloads orgânicos e melhor reputação na loja, sem depender só de mídia paga.',
-      mods: ['ASO', 'Reviews Intelligence', 'Store Analytics'],
-      img: 'uploads/detalhe-RankMyApp.png', href: 'produtos/rankmyapp/index.html',
-      features: [
-        'Indexação de palavras-chave nas lojas Apple e Google',
-        'Inteligência de avaliações e gestão de reviews',
-        'Análise de concorrência por categoria e segmento',
-        'Monitoramento de posicionamento orgânico em tempo real',
-        'Relatórios de performance e store analytics'
-      ],
-      featureIcons: ['search', 'star', 'bar-chart-2', 'trending-up', 'file-text'] },
+      mods: ['ASO', 'Reviews Intelligence', 'Store Analytics'] },
     { c: '#A8BF00', ti: '#00132c', abbr: 'RmA', icon: 'mouse-pointer-click', name: 'RankMyADS', line: 'Performance & Mídia',
       blurb: 'Mídia paga e programática com automação de lance em todos os canais.',
       benefit: 'ROAS escalável e aquisição paga eficiente, com automação de bid em todos os canais.',
-      mods: ['Programmatic', 'Bid automation', 'Google · Meta · TikTok'],
-      img: 'uploads/detalhe-RankMyADS.png', href: '#',
-      features: [
-        'Automação de lances com inteligência artificial',
-        'Gestão de mídia programática multicanal',
-        'Integração com Google, Meta, TikTok e Apple Ads',
-        'Rastreamento de ROAS por canal e campanha',
-        'Relatórios de performance em tempo real'
-      ],
-      featureIcons: ['bot', 'layers', 'link-2', 'target', 'activity'] },
+      mods: ['Programmatic', 'Bid automation', 'Google · Meta · TikTok'] },
     { c: '#06B6D4', ti: '#00132c', abbr: 'RmG', icon: 'bot', name: 'RankMyGEO', line: 'GEO para IAs generativas', isNew: true,
       blurb: 'Sua marca presente e citada nas respostas das IAs generativas.',
       benefit: 'Presença e citação nas respostas de ChatGPT, Claude, Perplexity e Gemini.',
-      mods: ['LLM monitoring', 'Citation tracking', 'GEO playbook'],
-      img: 'uploads/detalhe-RankMyGEO.png', href: '#',
-      features: [
-        'Monitoramento de citações em modelos LLM',
-        'Rastreamento de share of voice nas IAs',
-        'Análise de sentimento por modelo e prompt',
-        'Playbook de otimização para GEO',
-        'Cobertura em ChatGPT, Claude, Gemini e Perplexity'
-      ],
-      featureIcons: ['eye', 'pie-chart', 'message-square', 'book-open', 'cpu'] },
-    /* Ads Intelligence — temporarily hidden; launching next month
+      mods: ['LLM monitoring', 'Citation tracking', 'GEO playbook'] },
     { c: '#7C3AED', ti: '#fff', abbr: 'Adi', icon: 'radar', name: 'Ads Intelligence', line: 'Inteligência competitiva', isNew: true,
       blurb: 'Monitore criativos e investimento da concorrência em tempo real.',
       benefit: 'Veja criativos, share of voice e investimento estimado dos concorrentes em tempo real.',
       mods: ['Ad library', 'Share of voice', 'Spend estimate'] },
-    */
     { c: '#FF5700', ti: '#fff', abbr: 'Di', icon: 'users', name: 'Digital Influencers', line: 'Influência & Awareness',
       blurb: 'Matching de criadores certos para alcance qualificado e awareness.',
       benefit: 'Alcance qualificado com matching de criadores certos para cada campanha.',
-      mods: ['Creator discovery', 'Audience matching', 'Campaign reporting'],
-      img: 'uploads/detalhe-Digital-Influencers.png', href: '#',
-      features: [
-        'Descoberta de criadores orientada por dados',
-        'Matching de audiência qualificada por segmento',
-        'Gestão completa de campanhas com creators',
-        'Relatório de performance por influenciador',
-        'Análise de engajamento, alcance e ROI'
-      ],
-      featureIcons: ['search', 'users', 'share-2', 'bar-chart-2', 'trending-up'] }
+      mods: ['Creator discovery', 'Audience matching', 'Campaign reporting'] }
   ];
 
-  var SC_DURATION = 10000;
+  var SC_DURATION = 5000;
   var scList = document.getElementById('showcaseList');
   var scMedia = document.getElementById('showcaseMedia');
-  var scFeatures = document.getElementById('showcaseFeatures');
   var scIndex = 0;
   var scTimer = null;
   var scItems = [];
 
-  function renderFeatures(i) {
-    if (!scFeatures) return;
-    var p = PRODUCTS[i];
-    scFeatures.innerHTML =
-      '<div class="rc-scf" style="--c:' + p.c + '">' +
-        '<ul class="rc-scf__list">' +
-          (p.features || []).map(function (f, fi) {
-            var icon = (p.featureIcons && p.featureIcons[fi]) || 'check';
-            return '<li class="rc-scf__item"><span class="rc-scf__icon"><i class="lucide-ic" data-lucide="' + icon + '"></i></span>' + f + '</li>';
-          }).join('') +
-        '</ul>' +
-        '<a class="rc-scf__cta" href="' + (p.href || '#') + '">Conhecer o produto →</a>' +
-      '</div>';
-    if (window.lucide) lucide.createIcons();
-  }
-
   function renderMedia(i) {
     if (!scMedia) return;
     var p = PRODUCTS[i];
-    scMedia.innerHTML = p.img
-      ? '<img class="rc-scm-img" src="' + p.img + '" alt="' + p.name + '" loading="lazy" />'
-      : '';
+    scMedia.innerHTML =
+      '<div class="rc-scm" style="--c:' + p.c + ';--scm-ink:' + p.ti + '">' +
+        '<div class="rc-scm__deco"></div>' +
+        '<div class="rc-scm__top">' +
+          '<div class="rc-scm__icon"><i data-lucide="' + p.icon + '"></i></div>' +
+          '<span class="rc-scm__tag">' + p.line + '</span>' +
+        '</div>' +
+        '<div class="rc-scm__body">' +
+          '<h3 class="rc-scm__name">' + p.name + '</h3>' +
+          '<p class="rc-scm__benefit">' + p.benefit + '</p>' +
+          '<div class="rc-scm__mods">' + p.mods.map(function (m) { return '<span class="rc-scm__mod">' + m + '</span>'; }).join('') + '</div>' +
+        '</div>' +
+      '</div>';
+    if (window.lucide) lucide.createIcons();
   }
 
   function selectShowcase(i, fromClick) {
@@ -101,7 +57,6 @@
     scItems.forEach(function (el, idx) {
       el.classList.toggle('is-active', idx === i);
     });
-    renderFeatures(i);
     renderMedia(i);
     if (fromClick) stopScTimer();
   }
@@ -121,22 +76,18 @@
 
   if (scList && scMedia) {
     PRODUCTS.forEach(function (p, i) {
-      var b = document.createElement('div');
+      var b = document.createElement('button');
       b.className = 'rc-sc-item';
-      b.setAttribute('role', 'button');
-      b.setAttribute('tabindex', '0');
+      b.type = 'button';
       b.style.setProperty('--c', p.c);
       b.style.setProperty('--sc-dur', (SC_DURATION / 1000) + 's');
       b.innerHTML =
         '<div class="rc-sc-item__icon" style="background:' + p.c + ';color:' + p.ti + '">' + p.abbr + '</div>' +
-        '<div class="rc-sc-item__text">' +
-          '<div class="rc-sc-item__name">' + p.name + (p.isNew ? ' <span class="rc-sc-item__new">novo</span>' : '') + '</div>' +
-          '<div class="rc-sc-item__line">' + p.line + '</div>' +
-          '<p class="rc-sc-item__desc">' + p.blurb + '</p>' +
-        '</div>' +
+        (p.isNew ? '<span class="rc-sc-item__new">novo</span>' : '') +
+        '<div class="rc-sc-item__name">' + p.name + '</div>' +
+        '<p class="rc-sc-item__desc">' + p.blurb + '</p>' +
         '<span class="rc-sc-progress"></span>';
       b.addEventListener('click', function () { selectShowcase(i, true); });
-      b.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectShowcase(i, true); } });
       scList.appendChild(b);
       scItems.push(b);
     });
@@ -173,7 +124,7 @@
 
   /* ---------- Hero auto-rotation (stops on manual click) ---------- */
   var heroTimer = null;
-  var heroDur = 9000;
+  var heroDur = 4500;
   function stopHeroRotate() {
     if (heroTimer) { clearInterval(heroTimer); heroTimer = null; }
   }
